@@ -83,8 +83,8 @@ def complete_trial():
         calibrated_b = max(0.01, b_slope)
         is_calibrated = True
 
-        # TODO: Calculate throughput now that a and b are calibrated.
-        throughput = 99 
+        # Calculate throughput now that a and b are calibrated (in bits per second)
+        throughput = 1.0 / calibrated_b
         
         stats_label.set_content(
             f"CALIBRATION COMPLETE!\n"
